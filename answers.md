@@ -28,7 +28,17 @@ $('#time-travel').parent().remove();
 $('body').css('background-color','#123456');
 ```
 
-5. Change the background colour of the body.
+5. Change the background colour of the highlight class.
 ```javascript
-$('body').css('background-color','#123456');
+$('.highlight').css('background-color', '#654321');
+```
+
+6. Change the font family of h1 to monospace.
+```javascript
+$('h1').css('font-family', 'monospace');
+```
+
+7. Change the colour of the round icons in the sidebar.
+```javascript
+$('.action-icon-bg').css('background-color', '#FEDCBA');
 ```
