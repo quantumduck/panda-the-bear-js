@@ -90,3 +90,21 @@ for (i = 0; i < 10; i++) {
     pikachu.clone().appendTo($('.portfolio-container'));
 }
 ```
+
+3. Adding update time:
+```javascript
+var list = document.getElementsByClassName('bio-info');
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var rightSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page last updated on');
+var dateTime = document.createTextNode(Date());
+leftSpan.appendChild(lastUpdated);
+rightSpan.appendChild(dateTime);
+listItem.appendChild(leftSpan);
+listItem.appendChild(rightSpan);
+listItem.className = 'bio-info-item';
+leftSpan.className = 'bio-info-title';
+rightSpan.className = 'bio-info-value';
+list[0].appendChild(listItem);
+```
