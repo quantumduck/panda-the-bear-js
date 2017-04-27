@@ -18,7 +18,17 @@ var suitcase_icon = original.substring(0,original.indexOf('Employment'));
 $('#employment > .info-title').html(suitcase_icon + "Regrets");
 ```
 
-4. 
+4. Remove the time travel skill.
 ```javascript
+$('#time-travel').parent().remove();
+```
 
+5. Change the background colour of the body.
+```javascript
+$('body').css('background-color','#123456');
+```
+
+5. Change the background colour of the body.
+```javascript
+$('body').css('background-color','#123456');
 ```
