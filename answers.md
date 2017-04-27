@@ -28,17 +28,22 @@ $('#time-travel').parent().remove();
 $('body').css('background-color','#123456');
 ```
 
-5. Change the background colour of the highlight class.
+6. Change the background colour of the highlight class.
 ```javascript
 $('.highlight').css('background-color', '#654321');
 ```
 
-6. Change the font family of h1 to monospace.
+7. Change the font family of h1 to monospace.
 ```javascript
 $('h1').css('font-family', 'monospace');
 ```
 
-7. Change the colour of the round icons in the sidebar.
+8. Change the colour of the round icons in the sidebar.
 ```javascript
 $('.action-icon-bg').css('background-color', '#FEDCBA');
+```
+
+9. Change the placeholder in the contact form.
+```javascript
+$('#name').attr('placeholder', 'Identify Yourself!');
 ```
