@@ -15,9 +15,10 @@ document.getElementsByTagName('h1')[0].innerText = 'Quantum Duck';
 
 3. Change the "Employment" heading.
 ```javascript
-var original = $('#employment > .info-title').html();
-var suitcase_icon = original.substring(0,original.indexOf('Employment'));
-$('#employment > .info-title').html(suitcase_icon + "Regrets");
+var selection = document.querySelector('#employment > .info-title');
+var original = selection.innerHTML;
+var suitcase_icon =  original.substring(0, original.indexOf('Employment'));
+selection.innerHTML = suitcase_icon + 'Regrets'
 ```
 
 4. Remove the time travel skill.
