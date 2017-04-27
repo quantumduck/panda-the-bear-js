@@ -47,3 +47,23 @@ $('.action-icon-bg').css('background-color', '#FEDCBA');
 ```javascript
 $('#name').attr('placeholder', 'Identify Yourself!');
 ```
+
+10. Ditto.
+```javascript
+$('#message').attr('placeholder', 'State your business!');
+```
+
+11. Change the default value in the form field.
+```javascript
+$('#name').attr('value', 'Your Nemesis');
+```
+
+12. Ditto.
+```javascript
+$('#email').attr('value', 'koalathebear@gmail.com');
+```
+
+13. Change the submit button text.
+```javascript
+$('#submit').attr('value', 'En Garde!');
+```
