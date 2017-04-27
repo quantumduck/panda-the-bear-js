@@ -1,5 +1,7 @@
 # Answers:
 
+## Hacking Panda The Bear's Resume
+
 1. Change the profile picture:
 ```javascript
 image = $('.profile-image');
@@ -66,4 +68,25 @@ $('#email').attr('value', 'koalathebear@gmail.com');
 13. Change the submit button text.
 ```javascript
 $('#submit').attr('value', 'En Garde!');
+```
+
+## Adding Elements to the DOM
+
+1. Adding another Pikachu.
+```javascript
+var pikachu;
+for (var i = 0; i < pics.length; i++) {
+    if ($(pics[i]).attr('title') === 'Pikachu') {
+        pikachu = $(pics[i]).clone();
+    }
+}
+pikachu.appendTo('.portfolio-container');
+```
+
+2. Adding 10 more Pikachus.
+```javascript
+// Using pikachu defined in previous question.
+for (i = 0; i < 10; i++) {
+    pikachu.clone().appendTo($('.portfolio-container'));
+}
 ```
